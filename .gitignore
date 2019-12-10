@@ -1,4 +1,11 @@
 node_modules
 package-lock.json
 package.json
-sass/main.scss
+sass
+*.scss
+*.scss
+*.scss
+*.scss
+*.scss
+sass/base/_base.scss
+sass/components/_card.scss

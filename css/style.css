@@ -11,7 +11,8 @@ html {
 
 body {
   font-family: "CircularStd", sans-serif;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #414141; }
 
 h1 {
   font-size: 5.5rem;
@@ -74,11 +75,33 @@ p {
   margin-top: -100px;
   z-index: 2;
   grid-column: center-start / center-end;
-  padding: 5rem;
-  box-shadow: 0px 10px 50px rgba(139, 163, 185, 0.4), 0px 60px 30px rgba(0, 0, 0, 0.02); }
+  padding: 5rem 9rem;
+  box-shadow: 0px 10px 50px rgba(139, 163, 185, 0.4), 0px 60px 30px rgba(0, 0, 0, 0.02);
+  height: 34.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem; }
 
 .page__card {
-  display: flex; }
+  display: flex;
+  display: grid;
+  grid-auto-flow: row; }
+  .page__card--title h3 {
+    font-size: 2.2rem;
+    color: #1C1B20; }
+
+.clients {
+  grid-column: center-start / center-end;
+  padding: 8rem 2rem; }
+
+.client__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none; }
+
+.client_item {
+  list-style: none; }
 
 .container {
   display: grid;
@@ -92,8 +115,7 @@ p {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   height: 100vh;
-  position: relative;
-  z-index: -2; }
+  position: relative; }
 
 .header {
   grid-column: center-start / center-end;
@@ -171,7 +193,7 @@ p {
 
 .scroller {
   bottom: 15%;
-  left: 3rem;
+  left: 4rem;
   position: absolute;
   color: #D3D3D3;
   text-decoration: none;
