@@ -69,6 +69,17 @@ p {
 .border-bottom-white {
   border-bottom: 1px solid #fff; }
 
+.page-card-container {
+  background: #fff;
+  margin-top: -100px;
+  z-index: 2;
+  grid-column: center-start / center-end;
+  padding: 5rem;
+  box-shadow: 0px 10px 50px rgba(139, 163, 185, 0.4), 0px 60px 30px rgba(0, 0, 0, 0.02); }
+
+.page__card {
+  display: flex; }
+
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(6, [col-start] minmax(min-content, 19rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
@@ -81,7 +92,8 @@ p {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  z-index: -2; }
 
 .header {
   grid-column: center-start / center-end;
@@ -159,7 +171,7 @@ p {
 
 .scroller {
   bottom: 15%;
-  left: 5rem;
+  left: 3rem;
   position: absolute;
   color: #D3D3D3;
   text-decoration: none;

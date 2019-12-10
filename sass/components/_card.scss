@@ -1,0 +1,13 @@
+.page-card-container {
+    background:$color-white;
+    margin-top: -100px;
+    z-index:2;
+    grid-column:center-start / center-end;
+    padding:5rem;
+    box-shadow: $default-box-shadow;
+    height:34.5rem;
+}
+
+.page__card {
+    display:flex;
+}

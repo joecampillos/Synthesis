@@ -8,6 +8,7 @@
     background-size:cover;
     height:100vh;
     position:relative;
+    z-index:-2;
 
 
 }
@@ -115,7 +116,7 @@
 
 .scroller {
     bottom: 15%;
-    left: 5rem;
+    left: 3rem;
     position: absolute;
     color: $color-grey;
     text-decoration: none;
