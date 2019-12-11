@@ -1,7 +1,22 @@
-.highlight-white {color:$color-white;}
+.highlight-white {color:$color-white !important;}
 
 .highlight-primary {color:$color-primary !important;}
-.dot-circle {font-family:$font-primary;}
-.border-bottom-white {
-    border-bottom:1px solid $color-white;
+.dot-circle {font-family:$font-primary;color:$color-primary !important;}
+
+
+.border-bottom {
+
+    &--white {
+        border-bottom:1px solid $color-white;
+    }
+    
+    &--black {
+        border-bottom:1px solid $color-black;
+    }
+
+}
+
+
+.heading-22 {
+    font-size:2.2rem;
 }

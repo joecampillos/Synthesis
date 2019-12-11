@@ -6,23 +6,46 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    @include h2;
+}
+
+h2.main {
+   @include h2;
+    position: relative;
+    z-index:2;
+
+    &::before {
+      content:'';
+      z-index:-1;
+      border-radius:100%;
+      position: absolute;
+      width:15.2rem;
+      height:15.2rem;
+      left: -15%;
+      top: -15%;
+      background: linear-gradient(180deg, rgba(255, 4, 4, 0.2) 0%, rgba(255, 255, 255, 0) 113.16%);
+    }
+}
 
 h3 {
     font-size:2.4rem;
     line-height:135%;
     text-transform:none;
     font-weight:700;
+    color:$color-black;
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-transform:none;
+
 }
 
 p {
     font-size:1.6rem;
     line-height:145%;
 }
-
-
-
-
-
 
 
 
