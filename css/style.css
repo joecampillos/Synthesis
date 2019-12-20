@@ -774,7 +774,7 @@ p {
       @media only screen and (max-width: 25.8em) {
         .featured-projects .project-cont .project-case {
           height: 25rem;
-          max-width: 180%; } }
+          max-width: 160%; } }
       .featured-projects .project-cont .project-case__item {
         padding: 3rem; }
         .featured-projects .project-cont .project-case__item--bg {
