@@ -337,10 +337,12 @@
 
          @media only screen and (max-width:$bp-mobile) { 
             height:30rem;
+            max-width: 160%;
          }
 
          @media only screen and (max-width:$bp-mobile-small) { 
             height:25rem;
+            max-width: 180%;
          }
 
         &__item {
