@@ -4,16 +4,40 @@ h1 {
     font-weight:700;
     line-height: 6rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-1260) {
+    font-size:5rem;
+    }
+
+    @media only screen and (max-width: $bp-tab-por) {
+      font-size:4.5rem;
+
+      }
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size:4.2rem;
+      line-height: 5rem;
+
+      }
 }
 
 h2 {
     @include h2;
+
+    
 }
 
 h2.main {
    @include h2;
     position: relative;
     z-index:2;
+
+    
+    @media only screen and (max-width: $bp-tab-por) {
+      font-size:7rem;
+      line-height: 7rem;
+
+      }
 
     &::before {
       content:'';
@@ -25,6 +49,15 @@ h2.main {
       left: -15%;
       top: -15%;
       background: linear-gradient(180deg, rgba(255, 4, 4, 0.2) 0%, rgba(255, 255, 255, 0) 113.16%);
+
+      @media only screen and (max-width: $bp-tab-por) {
+        
+        width: 11rem;
+        height: 11rem;
+        left: -10%;
+        top: -10%;
+  
+        }
     }
 }
 
