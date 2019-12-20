@@ -132,6 +132,10 @@ h1 {
     h1 {
       font-size: 4.2rem;
       line-height: 5rem; } }
+  @media only screen and (max-width: 35.5em) {
+    h1 {
+      font-size: 3.8rem;
+      line-height: 4.2rem; } }
 
 h2 {
   font-size: 8rem;
@@ -434,7 +438,7 @@ p {
     color: #fff;
     display: flex;
     font-size: 1.4rem;
-    align-items: center; }
+    align-items: start; }
     .nav__main--start {
       display: grid;
       grid-template-columns: min-content max-content;
@@ -615,7 +619,10 @@ p {
     .letstalk {
       margin: 4rem 0 0 0;
       text-align: center;
-      padding: 2.3rem 0px; } }
+      padding: 2.3rem 0; } }
+  @media only screen and (max-width: 25.8em) {
+    .letstalk {
+      padding: 2.3rem 2.5rem; } }
   .letstalk a:link,
   .letstalk a:visited {
     color: #fff;
@@ -754,11 +761,15 @@ p {
           height: 45rem; } }
       @media only screen and (max-width: 48em) {
         .featured-projects .project-cont .project-case {
+          max-width: 143%;
           grid-row: auto;
           height: 35rem;
           grid-column: 1 / -1;
           border: 2px solid #fff;
           overflow: hidden; } }
+      @media only screen and (max-width: 35.5em) {
+        .featured-projects .project-cont .project-case {
+          height: 30rem; } }
       @media only screen and (max-width: 25.8em) {
         .featured-projects .project-cont .project-case {
           height: 25rem; } }
