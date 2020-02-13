@@ -378,7 +378,7 @@ p {
   .header__text-box {
     color: #fff;
     grid-column: center-start / center-end;
-    width: 90%;
+    width: 95%;
     padding: 10rem 0;
     position: relative;
     z-index: 3; }
@@ -394,14 +394,14 @@ p {
       .header__text-box {
         padding: 6rem 0; } }
     .header__text-box::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 188px;
       height: 188px;
       border-radius: 100%;
       left: -5rem;
       top: 3rem;
-      background: linear-gradient(195.81deg, #72202A -0.26%, rgba(19, 38, 45, 0.12) 81.11%);
+      background: linear-gradient(195.81deg, #72202a -0.26%, rgba(19, 38, 45, 0.12) 81.11%);
       mix-blend-mode: multiply;
       opacity: 0.5;
       z-index: -1; }
@@ -437,8 +437,7 @@ p {
       font-weight: normal !important;
       color: #C4C4C4; }
       .header__description--main .highlight-white {
-        font-weight: 700;
-        display: block; }
+        font-weight: 700; }
         @media only screen and (max-width: 48em) {
           .header__description--main .highlight-white {
             display: inline; } }
