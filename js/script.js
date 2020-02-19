@@ -33,3 +33,26 @@ var swiper = new Swiper('.swiper-container', {
       },
     }
   });
+
+
+  // MOBILE MENU
+
+/*
+
+  let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+  
+  navBarToggle.addEventListener('click', function () {
+      
+      mainNav.classList.toggle('navactive');
+  });
+
+
+  let mainNav2 = document.getElementById('js-navbar-toggle');
+  let navBarToggle2 = document.getElementById('js-navbar-toggle');
+  
+  navBarToggle2.addEventListener('click', function () {
+      
+      mainNav2.classList.toggle('navtoggle-active');
+  });
+*/
