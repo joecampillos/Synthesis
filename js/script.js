@@ -1,4 +1,4 @@
-var swiper = new Swiper('.client-slide', {
+var swiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
     spaceBetween: 40,
     setWrapperSize: true,
