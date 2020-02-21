@@ -386,7 +386,8 @@ p {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media only screen and (max-width: 48em) {
     .header-container {
       padding-bottom: 12rem;
@@ -512,8 +513,7 @@ p {
         .nav__main--start {
           display: none; } }
     .nav__main--menu {
-      display: flex;
-      position: relative; }
+      display: flex; }
       .nav__main--menu--circle {
         font-size: 3.8rem;
         color: #ED1C24;
@@ -599,7 +599,8 @@ p {
           margin: 0 0rem; } }
       .footer .content .footer-contact__address {
         font-size: 1.4rem; }
-      .footer .content .footer-contact__number, .footer .content .footer-contact__email a {
+      .footer .content .footer-contact__number,
+      .footer .content .footer-contact__email a {
         color: #fff; }
     .footer .content .footer-social {
       grid-column: 6 / 7; }
@@ -609,11 +610,6 @@ p {
       @media only screen and (max-width: 35.5em) {
         .footer .content .footer-social {
           grid-column: 1 / -1; } }
-      .footer .content .footer-social .social {
-        list-style: none;
-        display: flex; }
-        .footer .content .footer-social .social__item:not(:last-child) {
-          margin-right: 1.8rem; }
   .footer .copyright {
     grid-column: center-start / center-end;
     display: grid;
@@ -634,6 +630,156 @@ p {
         .footer .copyright .copyright-links__items:not(:last-child)::after {
           content: " | ";
           padding: 0 10px; }
+
+.social {
+  list-style: none;
+  display: flex; }
+  .social__item:not(:last-child) {
+    margin-right: 1.8rem; }
+
+.navbar-toggle {
+  position: absolute;
+  cursor: pointer; }
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out; }
+  .main-nav li a {
+    font-weight: 400;
+    line-height: 1.35;
+    font-size: 2rem;
+    line-height: 1.5;
+    position: relative;
+    display: block;
+    padding: 2rem 0 0; }
+
+.navactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: auto;
+  z-index: 99999; }
+
+.nav__main--menu--close {
+  justify-content: center;
+  text-align: center;
+  color: #ED1C24;
+  font-weight: 700; }
+
+.hidemenu {
+  display: none; }
+
+.navtoggle-active {
+  position: fixed;
+  z-index: 9999;
+  right: 2rem;
+  top: 4rem; }
+  .navtoggle-active .openmenu {
+    display: none; }
+  .navtoggle-active .hidemenu {
+    display: block; }
+
+/*
+
+.toggle-content {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+  display: block;
+  height: auto;
+}
+*/
+.main-nav2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+  width: 35rem;
+  height: 100%;
+  z-index: 9;
+  transform: translateX(35rem);
+  transition: all 200ms ease-in-out;
+  list-style: none; }
+  @media only screen and (max-width: 35.5em) {
+    .main-nav2 {
+      width: 28rem;
+      transform: translateX(28rem); } }
+  .main-nav2 li a {
+    font-weight: 400;
+    line-height: 1.35;
+    font-size: 2rem;
+    line-height: 1.5;
+    position: relative;
+    display: block;
+    padding: 2rem 0 0; }
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-nav2.open {
+  transform: translateX(0); }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 100ms linear; }
+
+.overlay.open {
+  z-index: 8;
+  opacity: 1; }
+
+.closeMenu {
+  cursor: pointer;
+  position: relative;
+  margin: 4rem 0 10rem; }
+
+.nav__main--menu--close {
+  font-size: 1.5rem;
+  border-radius: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #ed1c24;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 5px;
+  height: 5px;
+  transform: translate(-50%, -30%); }
+
+.menu-social {
+  margin-top: 10rem; }
+  @media only screen and (max-width: 35.5em) {
+    .menu-social li a img {
+      width: 80%; } }
 
 .whatwedo {
   margin: 5rem 0 8rem; }

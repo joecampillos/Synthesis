@@ -12,6 +12,7 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   @media only screen and (max-width: $bp-tab-por) {
     padding-bottom: 12rem;
@@ -184,7 +185,7 @@
 
     &--menu {
       display: flex;
-      position: relative;
+      // position: relative;
 
       &--circle {
         font-size: 3.8rem;
