@@ -66,6 +66,7 @@ var mobileBtn = document.querySelector('.navbar-toggle');
 var menu = document.querySelector('.main-nav2');
 var closeBtn = document.querySelector('.closeMenu');
 var overlay = document.querySelector('.overlay');
+var navLinks = document.querySelector('.nav-ul__list');
 
 
 // When the user clicks on the hamburger icon the 'open' class is added
@@ -79,6 +80,13 @@ mobileBtn.addEventListener('click', function(){
 // When the close button is clicked the 'open' class is removed from
 // both the menu and overlay elements making them invisible
 closeBtn.addEventListener('click', function(){
+  menu.className = 'main-nav2';
+  overlay.className = 'overlay';
+})
+
+// When the close button is clicked the 'open' class is removed from
+// both the menu and overlay elements making them invisible
+navLinks.addEventListener('click', function(){
   menu.className = 'main-nav2';
   overlay.className = 'overlay';
 })

@@ -687,7 +687,7 @@
       margin-top: 5rem;
       padding: 0.7rem 1rem 0.7rem 3rem;
       font-size: $default-font;
-      color: $color-white;
+      color: $color-white !important;
       text-decoration: none;
 
       @media only screen and (max-width: $bp-tab) {
