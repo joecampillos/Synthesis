@@ -681,14 +681,9 @@
     }
 
     .mainlink {
-      background: $color-primary;
       grid-column: 5 / 7;
       margin-left: 7rem;
       margin-top: 5rem;
-      padding: 0.7rem 1rem 0.7rem 3rem;
-      font-size: $default-font;
-      color: $color-white !important;
-      text-decoration: none;
 
       @media only screen and (max-width: $bp-tab) {
         grid-column: 3 / -1;
